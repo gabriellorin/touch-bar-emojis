@@ -1,0 +1,373 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		120B28131F0E7446007A3535 /* DFRFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12FBD12F1F064DEE00E2F644 /* DFRFoundation.framework */; };
+		12754FC11F0B9BE0006153C2 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12754FC01F0B9BE0006153C2 /* WindowController.swift */; };
+		12BC8E701F0E877E007ED8C5 /* KeyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BC8E6F1F0E877E007ED8C5 /* KeyEvent.swift */; };
+		12E5A4CA1F0EB0C600ACD0D0 /* TouchBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E5A4C91F0EB0C600ACD0D0 /* TouchBarController.swift */; };
+		12E5A4D01F0ED58300ACD0D0 /* SwiftFSWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E5A4CF1F0ED58300ACD0D0 /* SwiftFSWatcher.swift */; };
+		12E5A4D21F0FCDCA00ACD0D0 /* Emojis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E5A4D11F0FCDCA00ACD0D0 /* Emojis.swift */; };
+		12FBD1201F064CFA00E2F644 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FBD11F1F064CFA00E2F644 /* AppDelegate.swift */; };
+		12FBD1221F064CFA00E2F644 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FBD1211F064CFA00E2F644 /* ViewController.swift */; };
+		12FBD1241F064CFA00E2F644 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12FBD1231F064CFA00E2F644 /* Assets.xcassets */; };
+		12FBD1271F064CFA00E2F644 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12FBD1251F064CFA00E2F644 /* Main.storyboard */; };
+		12FBD1371F06769700E2F644 /* Scrubber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FBD1361F06769700E2F644 /* Scrubber.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		127C0FC01F0E73960029D74B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		12754FC01F0B9BE0006153C2 /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+		12BC8E6F1F0E877E007ED8C5 /* KeyEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyEvent.swift; sourceTree = "<group>"; };
+		12E5A4C91F0EB0C600ACD0D0 /* TouchBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchBarController.swift; sourceTree = "<group>"; };
+		12E5A4CF1F0ED58300ACD0D0 /* SwiftFSWatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftFSWatcher.swift; sourceTree = "<group>"; };
+		12E5A4D11F0FCDCA00ACD0D0 /* Emojis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emojis.swift; sourceTree = "<group>"; };
+		12FBD11C1F064CFA00E2F644 /* TouchBarEmojis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchBarEmojis.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		12FBD11F1F064CFA00E2F644 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		12FBD1211F064CFA00E2F644 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		12FBD1231F064CFA00E2F644 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		12FBD1261F064CFA00E2F644 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		12FBD1281F064CFA00E2F644 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12FBD12F1F064DEE00E2F644 /* DFRFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DFRFoundation.framework; path = ../../../../../../System/Library/PrivateFrameworks/DFRFoundation.framework; sourceTree = "<group>"; };
+		12FBD1311F064E2E00E2F644 /* TouchMojiPrototype-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TouchMojiPrototype-Bridging-Header.h"; sourceTree = "<group>"; };
+		12FBD1361F06769700E2F644 /* Scrubber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scrubber.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		12FBD1191F064CFA00E2F644 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				120B28131F0E7446007A3535 /* DFRFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12FBD1131F064CFA00E2F644 = {
+			isa = PBXGroup;
+			children = (
+				12FBD11E1F064CFA00E2F644 /* TouchBarEmojis */,
+				12FBD11D1F064CFA00E2F644 /* Products */,
+				12FBD12E1F064DEE00E2F644 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		12FBD11D1F064CFA00E2F644 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12FBD11C1F064CFA00E2F644 /* TouchBarEmojis.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		12FBD11E1F064CFA00E2F644 /* TouchBarEmojis */ = {
+			isa = PBXGroup;
+			children = (
+				12FBD11F1F064CFA00E2F644 /* AppDelegate.swift */,
+				12E5A4D11F0FCDCA00ACD0D0 /* Emojis.swift */,
+				12E5A4C91F0EB0C600ACD0D0 /* TouchBarController.swift */,
+				12FBD1211F064CFA00E2F644 /* ViewController.swift */,
+				12754FC01F0B9BE0006153C2 /* WindowController.swift */,
+				12FBD1361F06769700E2F644 /* Scrubber.swift */,
+				12BC8E6F1F0E877E007ED8C5 /* KeyEvent.swift */,
+				12FBD1231F064CFA00E2F644 /* Assets.xcassets */,
+				12FBD1251F064CFA00E2F644 /* Main.storyboard */,
+				12FBD1281F064CFA00E2F644 /* Info.plist */,
+				12FBD1311F064E2E00E2F644 /* TouchMojiPrototype-Bridging-Header.h */,
+				12E5A4CF1F0ED58300ACD0D0 /* SwiftFSWatcher.swift */,
+			);
+			path = TouchBarEmojis;
+			sourceTree = "<group>";
+		};
+		12FBD12E1F064DEE00E2F644 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12FBD12F1F064DEE00E2F644 /* DFRFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		12FBD11B1F064CFA00E2F644 /* TouchBarEmojis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12FBD12B1F064CFA00E2F644 /* Build configuration list for PBXNativeTarget "TouchBarEmojis" */;
+			buildPhases = (
+				12FBD1181F064CFA00E2F644 /* Sources */,
+				12FBD1191F064CFA00E2F644 /* Frameworks */,
+				12FBD11A1F064CFA00E2F644 /* Resources */,
+				127C0FC01F0E73960029D74B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TouchBarEmojis;
+			productName = TouchMojiPrototype;
+			productReference = 12FBD11C1F064CFA00E2F644 /* TouchBarEmojis.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		12FBD1141F064CFA00E2F644 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Gabriel Lorin";
+				TargetAttributes = {
+					12FBD11B1F064CFA00E2F644 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = QJK9HL4CAA;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 12FBD1171F064CFA00E2F644 /* Build configuration list for PBXProject "TouchBarEmojis" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 12FBD1131F064CFA00E2F644;
+			productRefGroup = 12FBD11D1F064CFA00E2F644 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				12FBD11B1F064CFA00E2F644 /* TouchBarEmojis */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		12FBD11A1F064CFA00E2F644 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12FBD1241F064CFA00E2F644 /* Assets.xcassets in Resources */,
+				12FBD1271F064CFA00E2F644 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		12FBD1181F064CFA00E2F644 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12FBD1221F064CFA00E2F644 /* ViewController.swift in Sources */,
+				12E5A4CA1F0EB0C600ACD0D0 /* TouchBarController.swift in Sources */,
+				12BC8E701F0E877E007ED8C5 /* KeyEvent.swift in Sources */,
+				12754FC11F0B9BE0006153C2 /* WindowController.swift in Sources */,
+				12FBD1371F06769700E2F644 /* Scrubber.swift in Sources */,
+				12FBD1201F064CFA00E2F644 /* AppDelegate.swift in Sources */,
+				12E5A4D21F0FCDCA00ACD0D0 /* Emojis.swift in Sources */,
+				12E5A4D01F0ED58300ACD0D0 /* SwiftFSWatcher.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		12FBD1251F064CFA00E2F644 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12FBD1261F064CFA00E2F644 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		12FBD1291F064CFA00E2F644 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		12FBD12A1F064CFA00E2F644 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		12FBD12C1F064CFA00E2F644 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = QJK9HL4CAA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+					"$(PROJECT_DIR)/TouchBarEmojis",
+				);
+				INFOPLIST_FILE = TouchBarEmojis/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = In.Lor.TouchBarEmojis;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "TouchBarEmojis/TouchMojiPrototype-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		12FBD12D1F064CFA00E2F644 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = QJK9HL4CAA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+					"$(PROJECT_DIR)/TouchBarEmojis",
+				);
+				INFOPLIST_FILE = TouchBarEmojis/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = In.Lor.TouchBarEmojis;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "TouchBarEmojis/TouchMojiPrototype-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12FBD1171F064CFA00E2F644 /* Build configuration list for PBXProject "TouchBarEmojis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12FBD1291F064CFA00E2F644 /* Debug */,
+				12FBD12A1F064CFA00E2F644 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12FBD12B1F064CFA00E2F644 /* Build configuration list for PBXNativeTarget "TouchBarEmojis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12FBD12C1F064CFA00E2F644 /* Debug */,
+				12FBD12D1F064CFA00E2F644 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 12FBD1141F064CFA00E2F644 /* Project object */;
+}
