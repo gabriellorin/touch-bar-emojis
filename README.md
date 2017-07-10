@@ -8,7 +8,7 @@
 
 1. Make sure you have a Mac with a Touch Bar (or a virtual Touch Bar)
 
-2. [Download the app here]()
+2. [Download the app here](https://github.com/gabriellorin/touch-bar-emojis/releases/download/1.0/TouchBarEmojis.app.zip)
 
 ## Features
 
