@@ -75,10 +75,8 @@
     // MARK: - [Private] Closure passed into `FSEventStream` and is called on new file event
 
     fileprivate let innerEventCallback: FSEventStreamCallback = { (stream, contextInfo, numEvents, eventPaths, eventFlags, eventIds) in
-        guard let eventFlags = eventFlags, let eventIds = eventIds else {
-            return
-        }
-
+        let eventIds = eventIds
+        let eventFlags = eventFlags
         let fsWatcher: SwiftFSWatcher = unsafeBitCast(contextInfo, to: SwiftFSWatcher.self)
         let paths = unsafeBitCast(eventPaths, to: NSArray.self) as! [String]
 
