@@ -4,11 +4,13 @@
 
 *Touch Bar Emojis* is a small app (written in Swift) which displays a permanent emoji input view for any app (see below for more info), providing a faster access to emojis, including in apps that don't have an emoji button.
 
+Updated (v1.1) for macOS Mojave (10.14) support.
+
 ## Download
 
 1. Make sure you have a Mac with a Touch Bar (or a virtual Touch Bar)
 
-2. [Download the app here](https://github.com/gabriellorin/touch-bar-emojis/releases/download/1.0/TouchBarEmojis.app.zip)
+2. [Download the app here](https://github.com/gabriellorin/touch-bar-emojis/releases/download/1.1/TouchBarEmojis.app.zip)
 
 ## Features
 
@@ -66,7 +68,11 @@ I also created another app, to create emoji shortcuts (faster than using the Tou
 
 ## Author
 
-Gabriel Lorin 
+Gabriel Lorin (https://github.com/gabriellorin)
+
+## Contributors
+
+Aaron (https://github.com/Spilly) 🙌
 
 ## License
 
