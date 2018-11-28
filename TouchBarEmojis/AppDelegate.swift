@@ -40,13 +40,11 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSTouchBarDelegate {
         // in case of a preferences files change:
         fileWatcher.watch { changeEvents in
             for _ in changeEvents {
-                
                 // update array containing recently used emojis:
                 Emojis.arrayEmojis = Emojis.getFrequentlyUsedEmojis()
                 
                 // reload the data of the Touch Bar:
                 self.touchBar.scrubber.reloadData()
-                
             }
         }
     }
@@ -78,14 +76,20 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSTouchBarDelegate {
                     
                     // if the current app is in the list, or if it's our own app:
                     if (bundles.contains(bundleIdentifier) || oneApp.bundleIdentifier == Bundle.main.bundleIdentifier) {
-                        
                         // show the permanent emoji bar:
-                        NSTouchBar.presentSystemModalFunctionBar(touchBar.systemModalTouchBar, systemTrayItemIdentifier: touchBar.emojiSystemModal.rawValue)
-                        
+                        if #available(OSX 10.14, *) {
+                            NSTouchBar.presentSystemModalTouchBar(touchBar.systemModalTouchBar, systemTrayItemIdentifier: touchBar.emojiSystemModal)
+                        } else {
+                            NSTouchBar.presentSystemModalFunctionBar(touchBar.systemModalTouchBar, systemTrayItemIdentifier: touchBar.emojiSystemModal.rawValue)
+                        }
                     } else {
-                        
                         // if not in the list, hide the permanent emoji bar:
-                        NSTouchBar.dismissSystemModalFunctionBar(touchBar.systemModalTouchBar)
+                        // show the permanent emoji bar:
+                        if #available(OSX 10.14, *) {
+                            NSTouchBar.dismissSystemModalTouchBar(touchBar.systemModalTouchBar)
+                        } else {
+                            NSTouchBar.dismissSystemModalFunctionBar(touchBar.systemModalTouchBar)
+                        }
                     }
                 }
                 
