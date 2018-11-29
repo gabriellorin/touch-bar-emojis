@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -394,8 +394,8 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" customClass="WindowController" customModule="TouchBarEmojis" customModuleProvider="target" sceneMemberID="viewController">
-                    <window key="window" title="👆" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" unifiedTitleAndToolbar="YES"/>
+                    <window key="window" title="👆" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <rect key="contentRect" x="604" y="379" width="480" height="309"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                         <toolbar key="toolbar" implicitIdentifier="24BAEB94-4241-47AB-8768-91242749A0C9" autosavesConfiguration="NO" allowsUserCustomization="NO" displayMode="iconAndLabel" sizeMode="regular" id="0fA-lv-Gni">
@@ -406,7 +406,7 @@
                                     <nil key="toolTip"/>
                                     <size key="minSize" width="38" height="17"/>
                                     <size key="maxSize" width="152" height="17"/>
-                                    <textField key="view" horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" id="Zde-St-He7">
+                                    <textField key="view" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="Zde-St-He7">
                                         <rect key="frame" x="0.0" y="14" width="152" height="17"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Touch Bar Emojis (beta)" id="9k1-l6-aGv">
@@ -423,6 +423,9 @@
                                 <toolbarItem reference="l5E-KR-BTV"/>
                             </defaultToolbarItems>
                         </toolbar>
+                        <connections>
+                            <outlet property="delegate" destination="B8D-0N-5wS" id="ebY-O4-N6d"/>
+                        </connections>
                     </window>
                     <connections>
                         <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
@@ -436,11 +439,11 @@
         <scene sceneID="hIz-AP-VOD">
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="TouchBarEmojis" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
+                    <view key="view" wantsLayer="YES" appearanceType="aqua" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="359"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="azk-S7-lld">
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="azk-S7-lld">
                                 <rect key="frame" x="12" y="4" width="421" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" continuous="YES" allowsUndo="NO" sendsActionOnEndEditing="YES" id="Gff-bM-yxl">
@@ -504,7 +507,7 @@
                                                             <rect key="frame" x="1" y="1" width="447" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
-                                                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dA-XN-Xa8">
+                                                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="8dA-XN-Xa8">
                                                                     <rect key="frame" x="0.0" y="0.0" width="447" height="17"/>
                                                                     <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="Gig-fr-qQr">
                                                                         <font key="font" metaFont="system"/>
@@ -528,11 +531,11 @@
                                         </tableView>
                                     </subviews>
                                 </clipView>
-                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="D1M-g4-BXq">
+                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="D1M-g4-BXq">
                                     <rect key="frame" x="1" y="-15" width="0.0" height="16"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
-                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="nc6-tW-ScD">
+                                <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="nc6-tW-ScD">
                                     <rect key="frame" x="224" y="17" width="15" height="102"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
@@ -548,7 +551,7 @@
                                     <action selector="buttonRemove:" target="XfG-lQ-9wD" id="K9H-X3-896"/>
                                 </connections>
                             </button>
-                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KPc-fx-58T">
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KPc-fx-58T">
                                 <rect key="frame" x="14" y="305" width="454" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="A permanent emoji view on the Touch Bar will be displayed for the following apps:" id="kFK-vW-qx1">
@@ -572,7 +575,7 @@
                                 <rect key="frame" x="93" y="68" width="296" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
-                                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PSu-Dl-S4g">
+                                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PSu-Dl-S4g">
                                         <rect key="frame" x="21" y="-13" width="226" height="37"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="a new version is available 😊: " id="eRf-gb-Bqh">
@@ -616,50 +619,51 @@
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
 c1dOU0NvbG9ygAKADRIgwwAAgAOAC1Z7MSwgMX3SFQoWGFpOUy5vYmplY3RzoReABIAK0hUKGh2iGxyA
-BYAGgAkQANIgCiEiXxAUTlNUSUZGUmVwcmVzZW50YXRpb26AB4AITxEIrE1NACoAAAAKAAAADgEAAAMA
-AAABAAEAAAEBAAMAAAABAAEAAAECAAMAAAACAAgACAEDAAMAAAABAAEAAAEGAAMAAAABAAEAAAERAAQA
-AAABAAAACAESAAMAAAABAAEAAAEVAAMAAAABAAIAAAEWAAMAAAABAAEAAAEXAAQAAAABAAAAAgEcAAMA
-AAABAAEAAAFSAAMAAAABAAEAAAFTAAMAAAACAAEAAYdzAAcAAAf0AAAAuAAAAAAAAAf0YXBwbAIgAABt
-bnRyR1JBWVhZWiAH0AACAA4ADAAAAABhY3NwQVBQTAAAAABub25lAAAAAAAAAAAAAAAAAAAAAAAA9tYA
-AQAAAADTLWFwcGwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVk
-ZXNjAAAAwAAAAG9kc2NtAAABMAAABmZjcHJ0AAAHmAAAADh3dHB0AAAH0AAAABRrVFJDAAAH5AAAAA5k
-ZXNjAAAAAAAAABVHZW5lcmljIEdyYXkgUHJvZmlsZQAAAAAAAAAAAAAAFUdlbmVyaWMgR3JheSBQcm9m
-aWxlAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbWx1YwAAAAAA
-AAAfAAAADHNrU0sAAAAqAAABhGVuVVMAAAAoAAABrmNhRVMAAAAsAAAB1nZpVk4AAAAsAAACAnB0QlIA
-AAAqAAACLnVrVUEAAAAsAAACWGZyRlUAAAAqAAAChGh1SFUAAAAuAAACrnpoVFcAAAAQAAAC3G5iTk8A
-AAAsAAAC7GtvS1IAAAAYAAADGGNzQ1oAAAAkAAADMGhlSUwAAAAgAAADVHJvUk8AAAAkAAADdGRlREUA
-AAA6AAADmGl0SVQAAAAuAAAD0nN2U0UAAAAuAAAEAHpoQ04AAAAQAAAELmphSlAAAAAWAAAEPmVsR1IA
-AAAkAAAEVHB0UE8AAAA4AAAEeG5sTkwAAAAqAAAEsGVzRVMAAAAoAAAE2nRoVEgAAAAkAAAFAnRyVFIA
-AAAiAAAFJmZpRkkAAAAsAAAFSGhySFIAAAA6AAAFdHBsUEwAAAA2AAAFrnJ1UlUAAAAmAAAF5GFyRUcA
-AAAoAAAGCmRhREsAAAA0AAAGMgBWAWEAZQBvAGIAZQBjAG4A/QAgAHMAaQB2AP0AIABwAHIAbwBmAGkA
-bABHAGUAbgBlAHIAaQBjACAARwByAGEAeQAgAFAAcgBvAGYAaQBsAGUAUABlAHIAZgBpAGwAIABkAGUA
-IABnAHIAaQBzACAAZwBlAG4A6AByAGkAYwBDHqUAdQAgAGgA7ABuAGgAIABNAOAAdQAgAHgA4QBtACAA
-QwBoAHUAbgBnAFAAZQByAGYAaQBsACAAQwBpAG4AegBhACAARwBlAG4A6QByAGkAYwBvBBcEMAQzBDAE
-OwRMBD0EOAQ5ACAEPwRABD4ERAQwBDkEOwAgAEcAcgBhAHkAUAByAG8AZgBpAGwAIABnAOkAbgDpAHIA
-aQBxAHUAZQAgAGcAcgBpAHMAwQBsAHQAYQBsAOEAbgBvAHMAIABzAHoA/AByAGsAZQAgAHAAcgBvAGYA
-aQBskBp1KHBwlo6Ccl9pY8+P8ABHAGUAbgBlAHIAaQBzAGsAIABnAHIA5QB0AG8AbgBlAHAAcgBvAGYA
-aQBsx3y8GAAgAEcAcgBhAHkAINUEuFzTDMd8AE8AYgBlAGMAbgD9ACABYQBlAGQA/QAgAHAAcgBvAGYA
-aQBsBeQF6AXVBeQF2QXcACAARwByAGEAeQAgBdsF3AXcBdkAUAByAG8AZgBpAGwAIABnAHIAaQAgAGcA
-ZQBuAGUAcgBpAGMAQQBsAGwAZwBlAG0AZQBpAG4AZQBzACAARwByAGEAdQBzAHQAdQBmAGUAbgAtAFAA
-cgBvAGYAaQBsAFAAcgBvAGYAaQBsAG8AIABnAHIAaQBnAGkAbwAgAGcAZQBuAGUAcgBpAGMAbwBHAGUA
-bgBlAHIAaQBzAGsAIABnAHIA5QBzAGsAYQBsAGUAcAByAG8AZgBpAGxmbpAacHBepmPPj/Blh072TgCC
-LDCwMOwwpDDXMO0w1TChMKQw6wOTA7UDvQO5A7oDzAAgA8ADwQO/A8YDrwO7ACADswO6A8EDuQBQAGUA
-cgBmAGkAbAAgAGcAZQBuAOkAcgBpAGMAbwAgAGQAZQAgAGMAaQBuAHoAZQBuAHQAbwBzAEEAbABnAGUA
-bQBlAGUAbgAgAGcAcgBpAGoAcwBwAHIAbwBmAGkAZQBsAFAAZQByAGYAaQBsACAAZwByAGkAcwAgAGcA
-ZQBuAOkAcgBpAGMAbw5CDhsOIw5EDh8OJQ5MDioONQ5ADhcOMg4XDjEOSA4nDkQOGwBHAGUAbgBlAGwA
-IABHAHIAaQAgAFAAcgBvAGYAaQBsAGkAWQBsAGUAaQBuAGUAbgAgAGgAYQByAG0AYQBhAHAAcgBvAGYA
-aQBpAGwAaQBHAGUAbgBlAHIAaQENAGsAaQAgAHAAcgBvAGYAaQBsACAAcwBpAHYAaQBoACAAdABvAG4A
-bwB2AGEAVQBuAGkAdwBlAHIAcwBhAGwAbgB5ACAAcAByAG8AZgBpAGwAIABzAHoAYQByAG8BWwBjAGkE
-HgQxBEkEOAQ5ACAEQQQ1BEAESwQ5ACAEPwRABD4ERAQ4BDsETAZFBkQGQQAgBioGOQYxBkoGQQAgAEcA
-cgBhAHkAIAYnBkQGOQYnBkUARwBlAG4AZQByAGUAbAAgAGcAcgDlAHQAbwBuAGUAYgBlAHMAawByAGkA
-dgBlAGwAcwBlAAB0ZXh0AAAAAENvcHlyaWdodCAyMDA3IEFwcGxlIEluYy4sIGFsbCByaWdodHMgcmVz
-ZXJ2ZWQuAFhZWiAAAAAAAADzUQABAAAAARbMY3VydgAAAAAAAAABAc0AANIlJicoWiRjbGFzc25hbWVY
-JGNsYXNzZXNfEBBOU0JpdG1hcEltYWdlUmVwoycpKlpOU0ltYWdlUmVwWE5TT2JqZWN00iUmLC1XTlNB
-cnJheaIsKtIlJi8wXk5TTXV0YWJsZUFycmF5oy8sKtMyMwo0NTZXTlNXaGl0ZVxOU0NvbG9yU3BhY2VE
-MCAwABADgAzSJSY4OVdOU0NvbG9yojgq0iUmOzxXTlNJbWFnZaI7Kl8QD05TS2V5ZWRBcmNoaXZlctE/
-QFRyb290gAEACAARABoAIwAtADIANwBGAEwAVwBeAGUAcgB5AIEAgwCFAIoAjACOAJUAmgClAKcAqQCr
-ALAAswC1ALcAuQC7AMAA1wDZANsJiwmQCZsJpAm3CbsJxgnPCdQJ3AnfCeQJ8wn3Cf4KBgoTChgKGgoc
-CiEKKQosCjEKOQo8Ck4KUQpWAAAAAAAAAgEAAAAAAAAAQQAAAAAAAAAAAAAAAAAAClg
+BYAGgAkQANIgCiEiXxAUTlNUSUZGUmVwcmVzZW50YXRpb26AB4AITxEIxE1NACoAAAAKAAAAEAEAAAMA
+AAABAAEAAAEBAAMAAAABAAEAAAECAAMAAAACAAgACAEDAAMAAAABAAEAAAEGAAMAAAABAAEAAAEKAAMA
+AAABAAEAAAERAAQAAAABAAAACAESAAMAAAABAAEAAAEVAAMAAAABAAIAAAEWAAMAAAABAAEAAAEXAAQA
+AAABAAAAAgEcAAMAAAABAAEAAAEoAAMAAAABAAIAAAFSAAMAAAABAAEAAAFTAAMAAAACAAEAAYdzAAcA
+AAf0AAAA0AAAAAAAAAf0YXBwbAIgAABtbnRyR1JBWVhZWiAH0AACAA4ADAAAAABhY3NwQVBQTAAAAABu
+b25lAAAAAAAAAAAAAAAAAAAAAAAA9tYAAQAAAADTLWFwcGwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVkZXNjAAAAwAAAAG9kc2NtAAABMAAABmZjcHJ0AAAHmAAAADh3
+dHB0AAAH0AAAABRrVFJDAAAH5AAAAA5kZXNjAAAAAAAAABVHZW5lcmljIEdyYXkgUHJvZmlsZQAAAAAA
+AAAAAAAAFUdlbmVyaWMgR3JheSBQcm9maWxlAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAbWx1YwAAAAAAAAAfAAAADHNrU0sAAAAqAAABhGVuVVMAAAAoAAABrmNhRVMA
+AAAsAAAB1nZpVk4AAAAsAAACAnB0QlIAAAAqAAACLnVrVUEAAAAsAAACWGZyRlUAAAAqAAAChGh1SFUA
+AAAuAAACrnpoVFcAAAAQAAAC3G5iTk8AAAAsAAAC7GtvS1IAAAAYAAADGGNzQ1oAAAAkAAADMGhlSUwA
+AAAgAAADVHJvUk8AAAAkAAADdGRlREUAAAA6AAADmGl0SVQAAAAuAAAD0nN2U0UAAAAuAAAEAHpoQ04A
+AAAQAAAELmphSlAAAAAWAAAEPmVsR1IAAAAkAAAEVHB0UE8AAAA4AAAEeG5sTkwAAAAqAAAEsGVzRVMA
+AAAoAAAE2nRoVEgAAAAkAAAFAnRyVFIAAAAiAAAFJmZpRkkAAAAsAAAFSGhySFIAAAA6AAAFdHBsUEwA
+AAA2AAAFrnJ1UlUAAAAmAAAF5GFyRUcAAAAoAAAGCmRhREsAAAA0AAAGMgBWAWEAZQBvAGIAZQBjAG4A
+/QAgAHMAaQB2AP0AIABwAHIAbwBmAGkAbABHAGUAbgBlAHIAaQBjACAARwByAGEAeQAgAFAAcgBvAGYA
+aQBsAGUAUABlAHIAZgBpAGwAIABkAGUAIABnAHIAaQBzACAAZwBlAG4A6AByAGkAYwBDHqUAdQAgAGgA
+7ABuAGgAIABNAOAAdQAgAHgA4QBtACAAQwBoAHUAbgBnAFAAZQByAGYAaQBsACAAQwBpAG4AegBhACAA
+RwBlAG4A6QByAGkAYwBvBBcEMAQzBDAEOwRMBD0EOAQ5ACAEPwRABD4ERAQwBDkEOwAgAEcAcgBhAHkA
+UAByAG8AZgBpAGwAIABnAOkAbgDpAHIAaQBxAHUAZQAgAGcAcgBpAHMAwQBsAHQAYQBsAOEAbgBvAHMA
+IABzAHoA/AByAGsAZQAgAHAAcgBvAGYAaQBskBp1KHBwlo6Ccl9pY8+P8ABHAGUAbgBlAHIAaQBzAGsA
+IABnAHIA5QB0AG8AbgBlAHAAcgBvAGYAaQBsx3y8GAAgAEcAcgBhAHkAINUEuFzTDMd8AE8AYgBlAGMA
+bgD9ACABYQBlAGQA/QAgAHAAcgBvAGYAaQBsBeQF6AXVBeQF2QXcACAARwByAGEAeQAgBdsF3AXcBdkA
+UAByAG8AZgBpAGwAIABnAHIAaQAgAGcAZQBuAGUAcgBpAGMAQQBsAGwAZwBlAG0AZQBpAG4AZQBzACAA
+RwByAGEAdQBzAHQAdQBmAGUAbgAtAFAAcgBvAGYAaQBsAFAAcgBvAGYAaQBsAG8AIABnAHIAaQBnAGkA
+bwAgAGcAZQBuAGUAcgBpAGMAbwBHAGUAbgBlAHIAaQBzAGsAIABnAHIA5QBzAGsAYQBsAGUAcAByAG8A
+ZgBpAGxmbpAacHBepmPPj/Blh072TgCCLDCwMOwwpDDXMO0w1TChMKQw6wOTA7UDvQO5A7oDzAAgA8AD
+wQO/A8YDrwO7ACADswO6A8EDuQBQAGUAcgBmAGkAbAAgAGcAZQBuAOkAcgBpAGMAbwAgAGQAZQAgAGMA
+aQBuAHoAZQBuAHQAbwBzAEEAbABnAGUAbQBlAGUAbgAgAGcAcgBpAGoAcwBwAHIAbwBmAGkAZQBsAFAA
+ZQByAGYAaQBsACAAZwByAGkAcwAgAGcAZQBuAOkAcgBpAGMAbw5CDhsOIw5EDh8OJQ5MDioONQ5ADhcO
+Mg4XDjEOSA4nDkQOGwBHAGUAbgBlAGwAIABHAHIAaQAgAFAAcgBvAGYAaQBsAGkAWQBsAGUAaQBuAGUA
+bgAgAGgAYQByAG0AYQBhAHAAcgBvAGYAaQBpAGwAaQBHAGUAbgBlAHIAaQENAGsAaQAgAHAAcgBvAGYA
+aQBsACAAcwBpAHYAaQBoACAAdABvAG4AbwB2AGEAVQBuAGkAdwBlAHIAcwBhAGwAbgB5ACAAcAByAG8A
+ZgBpAGwAIABzAHoAYQByAG8BWwBjAGkEHgQxBEkEOAQ5ACAEQQQ1BEAESwQ5ACAEPwRABD4ERAQ4BDsE
+TAZFBkQGQQAgBioGOQYxBkoGQQAgAEcAcgBhAHkAIAYnBkQGOQYnBkUARwBlAG4AZQByAGUAbAAgAGcA
+cgDlAHQAbwBuAGUAYgBlAHMAawByAGkAdgBlAGwAcwBlAAB0ZXh0AAAAAENvcHlyaWdodCAyMDA3IEFw
+cGxlIEluYy4sIGFsbCByaWdodHMgcmVzZXJ2ZWQuAFhZWiAAAAAAAADzUQABAAAAARbMY3VydgAAAAAA
+AAABAc0AANIlJicoWiRjbGFzc25hbWVYJGNsYXNzZXNfEBBOU0JpdG1hcEltYWdlUmVwoycpKlpOU0lt
+YWdlUmVwWE5TT2JqZWN00iUmLC1XTlNBcnJheaIsKtIlJi8wXk5TTXV0YWJsZUFycmF5oy8sKtMyMwo0
+NTZXTlNXaGl0ZVxOU0NvbG9yU3BhY2VEMCAwABADgAzSJSY4OVdOU0NvbG9yojgq0iUmOzxXTlNJbWFn
+ZaI7Kl8QD05TS2V5ZWRBcmNoaXZlctE/QFRyb290gAEACAARABoAIwAtADIANwBGAEwAVwBeAGUAcgB5
+AIEAgwCFAIoAjACOAJUAmgClAKcAqQCrALAAswC1ALcAuQC7AMAA1wDZANsJowmoCbMJvAnPCdMJ3gnn
+CewJ9An3CfwKCwoPChYKHgorCjAKMgo0CjkKQQpECkkKUQpUCmYKaQpuAAAAAAAAAgEAAAAAAAAAQQAA
+AAAAAAAAAAAAAAAACnA
 </mutableData>
         </image>
     </resources>
