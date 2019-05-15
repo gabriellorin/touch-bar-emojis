@@ -15,6 +15,7 @@ Updated (v1.1) for macOS Mojave (10.14) support.
 ## Features
 
 * Display your most frequently used emojis (on 10.12: the most recently used emojis — MacOS 10.12 doesn't keep track on how many times an emoji is used — and starting in 10.13 your most frequently used emojis)
+_Note: Most frequently used emojis are loaded on app startup_
 
 ![](README-images/touchbaremojis-gif.gif)
 
